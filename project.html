@@ -1,0 +1,69 @@
+<!Doctype html>
+<html lang ="en">
+    <head>
+        <meta charset="utf-08">
+        <meta name ="viewport" content="width= device width initial-scale=1";>
+        <title>query mode</title>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <style>
+            .container{
+                margin-top: 100px;
+            }
+            .container h1{
+                margin-bottom: 50px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+           
+            }
+            body{
+                background-color:pink
+            }
+            .input-group{
+                width:25%
+            }
+            @media screen and (max-width: 650px) {
+                body {
+                    background-color: lightgreen;
+                }
+                .input-group{
+                    width: 70%;
+                }
+
+            }
+        </style>
+    </head>
+    <body>
+         <div class="container">
+        <form action="jnani.html">
+            <center>
+            <h1  class="text-primary"> Student Query Mode</h1>
+            <div class="input-group mb-3">
+                <span class="input-group-text">ID Number </span>
+                <input type="text" class="form-control" required placeholder="student ID">
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text">Password</span>
+                <input type="password" class="form-control" required placeholder="password" id="mypass">
+                <span class="input-group-text"> <input type="checkbox" onclick="visibility()">
+                </span>
+
+              </div>
+            <button class="btn btn-dark">submit</button>
+
+    
+        </form>
+    </div>
+    </center>
+        <script>
+            function visibility(){
+                var x = document.getElementById("mypass");
+                if (x.type==="password"){
+                    x.type="text";   
+                }
+                else{
+                    x.type="password";
+                }
+            }
+        </script>
+    </body>
+    </html>
